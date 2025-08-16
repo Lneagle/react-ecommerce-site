@@ -1,12 +1,3 @@
-# React + Vite
+# Coffee Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This is an SPA ecommerce site for a store that sells coffee.  It consists of three main sections: Home (a landing page with an about message), Shop (a searchable list of products), and Admin Portal.  The Admin Portal initially displays a login screen.  Once logged in, it redirects to a form to add products to the site.  Clicking on a product on the Shop page will display a product information page.  If you are logged in, there will be an Edit button on the product information page, which will allow you to edit the product.
