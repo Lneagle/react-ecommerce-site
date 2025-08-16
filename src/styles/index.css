@@ -1,0 +1,92 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #87664a;
+}
+
+nav {
+    background-color: #88786a;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #fff;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: normal;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.home h1 {
+  margin-bottom: 0;
+}
+
+.home p {
+  color: #fff;
+  text-align: center;
+}
+
+.shop {
+  margin: 0 1em;
+}
+
+.searchbar {
+  padding: 1em 0;
+}
+
+.searchbar input {
+  font-size: 1em;
+  border-radius: 1em;
+  border: 1px solid #54432f;
+  padding: 0.25em 0.75em;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.product-card {
+  background-color: #d8d9d9;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: #54432f;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

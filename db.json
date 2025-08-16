@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "description": "Medium Roast, nutty flavor",
+      "name": "Vanilla Bean",
+      "origin": "Columbia",
+      "price": 10
+    },
+    {
+      "id": "2",
+      "description": "Dark Roast, rich flavor",
+      "name": "House Blend",
+      "origin": "Vietnam",
+      "price": 12
+    },
+    {
+      "id": "3",
+      "description": "Light Roast, bold flavor",
+      "name": "Tanzanian Peaberry",
+      "origin": "Tanzania",
+      "price": 21
+    },
+    {
+      "id": "4",
+      "description": "Light and Dark Roast, balanced flavor",
+      "name": "Breakfast Blend",
+      "origin": "South America + Asia",
+      "price": 15
+    },
+    {
+      "id": "5",
+      "description": "Dark Roast, smooth flavor",
+      "name": "Decaf Dark Sumatra",
+      "origin": "Asia",
+      "price": 14
+    },
+    {
+      "id": "6",
+      "description": "Dark Roast, sweet smoky flavor",
+      "name": "Decaf French Roast",
+      "origin": "South America",
+      "price": 12
+    }
+  ]
+}
