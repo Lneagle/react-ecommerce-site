@@ -11,6 +11,22 @@ body {
   background-color: #87664a;
 }
 
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 nav {
     background-color: #88786a;
     display: flex;
@@ -72,21 +88,72 @@ h1 {
   text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.product-card a {
+  color: #54432f;
+  text-decoration: none;
 }
-button:hover {
-  border-color: #646cff;
+
+.product-card a:hover {
+  text-decoration: underline;
+  color: #33291d;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+.product-details {
+  margin: 1em;
+  background-color: #d8d9d9;
+  padding: 0.5em;
+  border-radius: 1em;
+  color: #54432f;
+}
+
+.product-details h2 {
+  margin-top: 0;
+}
+
+.add-product-form {
+  width: 50%;
+  margin: 3em auto;
+  padding: 2em 8em;
+  background-color: #746356;
+  box-sizing: border-box;
+}
+
+.add-product-form h2 {
+  margin-top: 0;
+}
+
+.add-product-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  border: none;
+}
+
+.add-product-form button {
+  color: #fff;
+  background-color: #6e2a1e;
+  margin-top: 2em;
+}
+
+.product-details .add-product-form {
+  color: #000;
+}
+
+.login-form {
+  margin: 1em;
+}
+
+.login-form input {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 0 1em;
+  border: none;
+}
+
+.login-form button, .product-details button {
+  padding: 0.3em 0.5em;
+  line-height: 1em;
+  margin-left: 1em;
 }

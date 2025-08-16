@@ -1,20 +1,26 @@
 import react, { useState } from 'react';
-import { useParams, useOutletContext } from 'react-router-dom';
+import { useParams, useOutletContext, Outlet, useNavigate } from 'react-router-dom';
 
 function ProductPage() {
     const { id } = useParams();
-    const { products } = useOutletContext();
+    const { products, handleEditProduct, isLoggedIn } = useOutletContext();
     const product = products.find(p => p.id === id);
+    const navigate = useNavigate();
+    const [isEditMode, setIsEditMode] = useState(false);
 
-    const [editMode, setEditMode] = useState(false);
+    function handleEditClick() {
+        setIsEditMode(true);
+        navigate(`/products/${id}/edit`);
+    }
 
     return (
-        <div>
-            <h2>{product.name}</h2>
+        <main className="product-details">
+            <h2>{product.name}{isLoggedIn && !isEditMode ? <button onClick={handleEditClick}>Edit</button> : ""}</h2>
             <p>{product.description}</p>
             <p>Origin: {product.origin}</p>
             <p>${product.price}</p>
-        </div>
+            <Outlet context={{ product, handleEditProduct }} />
+        </main>
     )
 }
 
